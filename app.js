@@ -26,6 +26,7 @@ function displaySearchInfo(data) {
 
       var newsURL= $("<a>");
       newsURL.attr( "href",data.response.docs[i].web_url);
+      newsURL.attr('target','_blank');
       newsURL.text(data.response.docs[i].web_url);
 
       new_Post.append(newsTitle);  
@@ -38,7 +39,7 @@ function displaySearchInfo(data) {
 }
 
 function callAjax(){
-    // Creates AJAX call for the specific emotion button being clicked
+    // Creates AJAX call for the specific search button being clicked
     $.ajax({
       url: queryURL,
       method: "GET"
