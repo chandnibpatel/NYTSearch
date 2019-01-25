@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbtron  text-center bg-primary">
+                
+                <div class="p-5 display-4 text-white"><i class="fas fa-newspaper display-4 mr-1"></i>New York Time Search</div>
+           
+
+        </div>
+        <div class="panel-group">
+            <div class="row">
+                <div class="col-lg-12">
+             
+                    <div class="panel-title border p-2 mt-5 display-6"><i class="fas fa-keyboard mr-1"></i> Search Parameters</div>
+
+                    <form>
+                        <div class="form-group">
+                        <label for="exampleFormControlInput1">Search Term:</label>
+                        <input type="text" class="form-control" id="searchTerm">
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                        <select class="form-control" id="numOfRecords">
+                            <option>1</option>
+                            <option selected>5</option>
+                            <option>10</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Start Year(Optional):</label>
+                            <input type="text" class="form-control" id="startYear">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">End Year(Optional):</label>
+                            <input type="text" class="form-control" id="endYear">
+                        </div>
+                        <form class="form-inline">
+                        
+                            <button type="submit" class="btn btn-primary mb-2" id="searchBtn">
+                                <i class="fas fa-search"></i>Search
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" id="clearBtn">
+                                    <i class="far fa-trash-alt"></i>Clear Results
+                            </button>
+                   
+                         </form>
+                </div>
+
+            </div>
+           
+            <div class="panel-title border">
+                <i class="fas fa-calendar-alt mr-1"></i>Top Articles</div>
+            <div class="results">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
