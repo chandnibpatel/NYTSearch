@@ -78,6 +78,7 @@ $("#searchBtn").on("click",function(event){
     event.preventDefault();
     setupReqURL();
     callAjax();
-    
-
+});
+$("#clearBtn").on("click",function(){
+    $(".results").empty();
 });
